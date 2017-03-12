@@ -1,0 +1,27 @@
+{
+  "name": "week-4-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorwltsang/week-4-game.git"
+  },
+  "author": "Victor Tsang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorwltsang/week-4-game/issues"
+  },
+  "homepage": "https://github.com/victorwltsang/week-4-game#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

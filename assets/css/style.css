@@ -1,0 +1,178 @@
+/** {
+    background-color: rgba(0, 0, 0, .10) !important;
+    border: 1px solid red !important;
+}*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background: url("../images/bg-2.png") no-repeat fixed center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 1.2em;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 10vh auto;
+    background-color: rgba(255, 255, 255, .40);
+    border-radius: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    flex: 0 0 30%;
+}
+
+.sidebar, .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .20);
+}
+
+.content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, .40);
+}
+
+header {
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #d11434;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+
+.scoreKeeper, .instructions, .points {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.scoreKeeper {
+    background-color: rgba(255, 235, 65, 0.90);
+    margin-bottom: auto;
+}
+
+.scores {
+    margin-bottom: .8em;
+}
+
+.instructions {
+    margin-top: auto;
+    background-color: rgba(255, 235, 65, 0.90);
+}
+
+.instructions h1 {
+    text-align: center;
+    color: #d11434;
+    margin-bottom: 1em;
+}
+
+.points {
+    background-color: rgba(255, 255, 255, .70);
+}
+
+.crystal {
+    margin-top: auto;
+    /*remove margin-bottom to stop centering */
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fading-value {
+    text-align: center;
+    width: 100%;
+    color: #888;
+    font-size: 125%;
+    position: absolute;
+    opacity: 0;
+}
+
+.gem-wrapper {
+    position: relative;
+    flex: 1;
+    margin: 3%;
+}
+
+.gem {
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.20);
+    box-shadow: 10px 10px 5px #888;
+}
+
+.gem:active {
+    transform: translateY(4px);
+    box-shadow: 5px 5px 5px #666;
+}
+
+#cloud {
+    position: absolute;
+    top: 35%;
+    right: -300px;
+    z-index: -3;
+    width: 20%;
+}
+
+#cloud2 {
+    position: absolute;
+    top: 2%;
+    right: -250px;
+    z-index: -3;
+    width: 10%;
+}
+
+@media screen and (max-width:1360px) {
+    .flex-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .instructions {
+        display: none;
+    }
+    .crystal {
+        margin-top: 30px;
+    }
+    .sidebar, .content, .wrapper {
+        display: block;
+    }
+    header h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 1.2em;
+    }
+}
